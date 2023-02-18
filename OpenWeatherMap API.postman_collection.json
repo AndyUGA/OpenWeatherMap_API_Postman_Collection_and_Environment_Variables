@@ -1,0 +1,102 @@
+{
+  "info": {
+    "_postman_id": "85e4b12f-3b0b-4ac3-885d-2ae0233c236a",
+    "name": "OpenWeatherMap API",
+    "description": "Watch my OpenWeatherMap API Tutorial here: [https://youtu.be/MdIfZJ08g2I](https://youtu.be/MdIfZJ08g2I)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "23454446"
+  },
+  "item": [
+    {
+      "name": "5 Day / 3 Hour Forecast in Kelvin",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.openweathermap.org/data/2.5/forecast?lat=35&lon=139&appid={{api_key}}",
+          "protocol": "https",
+          "host": ["api", "openweathermap", "org"],
+          "path": ["data", "2.5", "forecast"],
+          "query": [
+            {
+              "key": "lat",
+              "value": "35"
+            },
+            {
+              "key": "lon",
+              "value": "139"
+            },
+            {
+              "key": "appid",
+              "value": "{{api_key}}"
+            }
+          ]
+        },
+        "description": "Documentation link for additional information about this API call: [https://openweathermap.org/forecast5](https://openweathermap.org/forecast5)"
+      },
+      "response": []
+    },
+    {
+      "name": "5 Day / 3 Hour Forecast in Fahrenheit",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.openweathermap.org/data/2.5/forecast?lat=35&lon=139&appid={{api_key}}&units=imperial",
+          "protocol": "https",
+          "host": ["api", "openweathermap", "org"],
+          "path": ["data", "2.5", "forecast"],
+          "query": [
+            {
+              "key": "lat",
+              "value": "35"
+            },
+            {
+              "key": "lon",
+              "value": "139"
+            },
+            {
+              "key": "appid",
+              "value": "{{api_key}}"
+            },
+            {
+              "key": "units",
+              "value": "imperial"
+            }
+          ]
+        },
+        "description": "Documentation link for additional information about this API call: [https://openweathermap.org/forecast5](https://openweathermap.org/forecast5)"
+      },
+      "response": []
+    },
+    {
+      "name": "Current Weather Forecast",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.openweathermap.org/data/2.5/weather?lat=35&lon=139&appid={{api_key}}",
+          "protocol": "https",
+          "host": ["api", "openweathermap", "org"],
+          "path": ["data", "2.5", "weather"],
+          "query": [
+            {
+              "key": "lat",
+              "value": "35"
+            },
+            {
+              "key": "lon",
+              "value": "139"
+            },
+            {
+              "key": "appid",
+              "value": "{{api_key}}"
+            }
+          ]
+        },
+        "description": "Documentation link for additional information about this API call: [https://openweathermap.org/current](https://openweathermap.org/current)"
+      },
+      "response": []
+    }
+  ]
+}
